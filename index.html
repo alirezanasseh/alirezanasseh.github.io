@@ -13,155 +13,171 @@
             display: flex;
             justify-content: center;
         }
-        td {
-            vertical-align: top;
-            max-width: 280px;
-        }
+
         main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 20px;
             max-width: 800px;
-            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .container > div {
+            flex-grow: 1;
+            flex-basis: 33%;
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Alireza Nasseh</h1>
-        <h2>Welcome to my professional website</h2>
-        <p style="text-align: justify;">Experienced Senior Full Stack Developer with two decades of expertise in designing, developing, and leading diverse application projects. 
-            Based in Breda, Netherlands, my passion for staying updated with the latest software engineering practices has led me to excel in various startups, 
-            equipping me with insights into Marketing, UX, and Business Design. My journey has fostered proficiency in TypeScript, NestJs, Microservices, and more. 
-            Notably, I've contributed to Loyyo B.V.'s payment-linked loyalty platform, optimized microservices at Deity B.V., 
-            and spearheaded Microservice Multi-Tenancy architecture at Ideall Technology. With a proven track record of enhancing performance, scalability, and teamwork, 
-            I bring comprehensive expertise to every project. Connect with me to explore synergies in delivering outstanding solutions.
-        </p>
-        <table>
-            <tr>
-                <td>
+<main>
+    <h1>Alireza Nasseh</h1>
+    <h2>Welcome to my professional website</h2>
+    <p style="text-align: justify;">Experienced Senior Full Stack Developer with two decades of expertise in designing,
+        developing, and leading diverse application projects.
+        Based in Breda, Netherlands, my passion for staying updated with the latest software engineering practices has
+        led me to excel in various startups,
+        equipping me with insights into Marketing, UX, and Business Design. My journey has fostered proficiency in
+        TypeScript, NestJs, Microservices, and more.
+        Notably, I've contributed to Loyyo B.V.'s payment-linked loyalty platform, optimized microservices at Deity
+        B.V.,
+        and spearheaded Microservice Multi-Tenancy architecture at Ideall Technology. With a proven track record of
+        enhancing performance, scalability, and teamwork,
+        I bring comprehensive expertise to every project. Connect with me to explore synergies in delivering outstanding
+        solutions.
+    </p>
+    <div class="container">
+        <div>
+            <ul>
+                <li>
+                    Concepts & Architectures
                     <ul>
-                        <li>
-                            Concepts & Architectures
-                            <ul>
-                                <li>Microservice architecture</li>
-                                <li>Multi processing development</li>
-                                <li>Multi layer architecture</li>
-                                <li>Pub/Sub architecture</li>
-                                <li>TDD</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Language
-                            <ul>
-                                <li>Javascript & ES6</li>
-                                <li>TypeScript</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>NestJs</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Database
-                            <ul>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                                <li>MySQL</li>
-                                <li>Redis</li>
-                            </ul>
-                        </li>
+                        <li>Microservice architecture</li>
+                        <li>Multi processing development</li>
+                        <li>Multi layer architecture</li>
+                        <li>Pub/Sub architecture</li>
+                        <li>TDD</li>
                     </ul>
-                </td>
-                <td>
+                </li>
+                <li>
+                    Language
                     <ul>
-                        <li>
-                            ORM
-                            <ul>
-                                <li>Mongoose</li>
-                                <li>Prisma</li>
-                                <li>TypeORM</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Communication
-                            <ul>
-                                <li>REST API</li>
-                                <li>GraphQL</li>
-                                <li>SocketIO</li>
-                                <li>RabbitMQ</li>
-                                <li>gRPC</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Testing
-                            <ul>
-                                <li>Jest</li>
-                                <li>Mocha</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Server & DevOps
-                            <ul>
-                                <li>CI/CD</li>
-                                <li>Docker</li>
-                                <li>GIT Flow</li>
-                            </ul>
-                        </li>
+                        <li>Javascript & ES6</li>
+                        <li>TypeScript</li>
                     </ul>
-                </td>
-                <td>
+                </li>
+                <li>
+                    Backend
                     <ul>
-                        <li>
-                            AWS
-                            <ul>
-                                <li>Cognito</li>
-                                <li>DynamoDB</li>
-                                <li>Lambda</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>React.js</li>
-                                <li>Next.js</li>
-                            </ul>
-                        </li>
-                        <li>
-                            UI Styling
-                            <ul>
-                                <li>SASS</li>
-                                <li>Tailwind CSS</li>
-                                <li>Styled Component</li>
-                                <li>CSS-In-Js</li>
-                            </ul>
-                        </li>
-                        <li>
-                            UI Kits
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>Material UI</li>
-                            </ul>
-                        </li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>NestJs</li>
                     </ul>
-                </td>
-            </tr>
-        </table>
-        <p>Find me on:</p>
-        <ul class="link-list">
-            <li>
-                <a href="https://www.linkedin.com/in/alirezanasseh/" target="_blank" rel="noopener">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://github.com/alirezanasseh" target="_blank" rel="noopener">GitHub</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/AlirezaNasseh" target="_blank" rel="noopener">Twitter</a>
-            </li>
-        </ul>
-        <p>Here you can <a href="https://drive.google.com/file/d/1CacGIQPb691biFbyV9f5wKYk8DPG5Rmo/view?usp=drive_link" target="_blank" rel="noopener">visit my Resume</a></p>
-        <p>Contact me at: <a href="mailto:alireza.nasseh@gmail.com">alireza.nasseh@gmail.com</a></p>
-    </main>
+                </li>
+                <li>
+                    Database
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Redis</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    ORM
+                    <ul>
+                        <li>Mongoose</li>
+                        <li>Prisma</li>
+                        <li>TypeORM</li>
+                    </ul>
+                </li>
+                <li>
+                    Communication
+                    <ul>
+                        <li>REST API</li>
+                        <li>GraphQL</li>
+                        <li>SocketIO</li>
+                        <li>RabbitMQ</li>
+                        <li>gRPC</li>
+                    </ul>
+                </li>
+                <li>
+                    Testing
+                    <ul>
+                        <li>Jest</li>
+                        <li>Mocha</li>
+                    </ul>
+                </li>
+                <li>
+                    Server & DevOps
+                    <ul>
+                        <li>CI/CD</li>
+                        <li>Docker</li>
+                        <li>GIT Flow</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    AWS
+                    <ul>
+                        <li>Cognito</li>
+                        <li>DynamoDB</li>
+                        <li>Lambda</li>
+                    </ul>
+                </li>
+                <li>
+                    Frontend
+                    <ul>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                    </ul>
+                </li>
+                <li>
+                    UI Styling
+                    <ul>
+                        <li>SASS</li>
+                        <li>Tailwind CSS</li>
+                        <li>Styled Component</li>
+                        <li>CSS-In-Js</li>
+                    </ul>
+                </li>
+                <li>
+                    UI Kits
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Material UI</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>Find me on:</p>
+    <ul class="link-list">
+        <li>
+            <a href="https://www.linkedin.com/in/alirezanasseh/" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+            <a href="https://github.com/alirezanasseh" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/AlirezaNasseh" target="_blank" rel="noopener">Twitter</a>
+        </li>
+    </ul>
+    <p>Here you can <a href="https://drive.google.com/file/d/1CacGIQPb691biFbyV9f5wKYk8DPG5Rmo/view?usp=drive_link"
+                       target="_blank" rel="noopener">visit my Resume</a></p>
+    <p>Contact me at: <a href="mailto:alireza.nasseh@gmail.com">alireza.nasseh@gmail.com</a></p>
+</main>
 </body>
 </html>
